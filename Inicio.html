@@ -1,0 +1,598 @@
+:<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'> 
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <!--estilos Javascript-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/> 
+        <!--Agregar estilos css-->
+        <link rel="stylesheet" href="Inicio.css">
+    </head>
+    <body>
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+        
+            <a href="#" class="logo"><span>Xiomara</span> Presidenta.</a>
+        
+            <nav class="navbar">
+                <a href="#home">Inicio</a>
+                <a href="#book">Geoportal</a>
+                <a href="#packages">Servicios</a>
+                <a href="#services">Mapa general</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#contact">Contactanos</a>
+            </nav>
+        
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+        
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        
+        </header>
+
+        <div class="login-form-container">
+
+            <i class="fas fa-times" id="form-close"></i>
+        
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="Ingresa tu Email">
+                <input type="password" class="box" placeholder="Ingresa tu contraseña">
+                <input type="submit" value="login now" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">Recordar.</label>
+                <p>Olividastes la contraseña? <a href="#">Click aqui</a></p>
+                <p>No tienes una cuenta? <a href="#">registrate aqui.</a></p>
+            </form>
+        
+        </div>
+
+<div class="conteiner-welcome">
+    <div class="contenedor-img">
+            <img src="XIO1.jpg" alt="Presidenta">
+    </div>
+    <div class="contenedor-texto">
+    <h2 class="titulo">
+    <span class="typed"></span> 
+    </h2> 
+     <div class="titulo" id="cadenas-texto">
+    <p>Bienvenido al <i class="mascota">Geoportal.</i></p>
+    <p><i class="mascota">Mapeo web.</i></p> 
+    </div>  
+    <p class="parrafo">Geportal enfocado a la ejecucion de proyectos en el gobierno de Xiomara Castro, contiene informacion geoespacial de interes sobre diferentes tematicads enfocadas al desarrollo sostenible del pais.</p>
+    <a href="#" class="btn-link activo">Visitanos</a>
+    <a href="#" class="btn-link">Geportal web.</a>
+    </div>
+</div>
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Gobierno de Xiomara Castro.</h3>
+        <p>Portal de informacion geografica.</p>
+        <a href="#" class="btn">Descubre mas.</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="Celebracion.mp4"></span>
+        <span class="vid-btn" data-src="Libre-presidenta-xiomara.mp4"></span>
+        <span class="vid-btn" data-src="Video1.mp4"></span>
+        <span class="vid-btn" data-src="Video2.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="Celebracion.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>C</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>e</span>
+        <span>n</span>
+        <span>i</span>
+        <span>d</span>
+        <span>o</span>
+    </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="amlo-xiomara.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Visita de Amlo a Honduras. </h3>
+                <p>Visita del presidente de Mexico con Xiomara Castro.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"><span>Gobierno Libre </span> </div>
+                <a href="#" class="btn">Mira mas</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="USA-HN.webp" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Kamala Harris visita Honduras.</h3>
+                <p>Vicepresidenta de USA visita a la presidenta electa Xiomara Castro. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Gobierno Libre<span></span> </div>
+                <a href="#" class="btn">Mira mas.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="XIO-Nasralla.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Alianza con Sakvador Nasralla.</h3>
+                <p>Union estrategica entre Xiomara Castro con Salvador Nasralla. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Gobierno Libre<span></span></div>
+                <a href="#" class="btn">Mira mas.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="XIO-MEL.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Toma de posecion de la presidenta electa.</h3>
+                <p>Toma de posecion celebracion a la soberania electoral del pueblo.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Gobierno Libre <span></span> </div>
+                <a href="#" class="btn">Mira mas. </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="COHEP-XIOMI.webp" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Reunion COHEP con Xiomara Castro</h3>
+                <p>Presidenta electa se reune con el ejecutivo del COHEP.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Gobierno Libre<span></span> </div>
+                <a href="Talanga.html" class="btn">Mira mas.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="LIBRE.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Celebracion del pueblo</h3>
+                <p>Honduras celebra la victoria de Xiomara Castro.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Gobierno Libre <span></span> </div>
+                <a href="#" class="btn">Mira mas.</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>i</span>
+        <span>o</span>
+        <span>s</span> 
+
+        <span>G</span>
+        <span>e</span>
+        <span>o</span>
+        <span>P</span>
+        <span>o</span>
+        <span>r</span>
+        <span>t</span>
+        <span>a</span>
+        <span>l</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Mapas electorales</h3>
+            <p>Mapas e informacion de los elementos que influyen cada zona de interes.</p>
+        </div>
+        <div class="box">
+            <i class="fi fi-rr-cloud-download"></i>
+            <h3>Geoportal webmapping.</h3>
+            <p>Geportal web que nos permite visualizar y almacenar los datos espaciales basado en geonode.</p>
+        </div>
+        <div class="box">
+            <i class="fifi fi-rr-database""></i>
+            <h3>Base de datos espacial.</h3>
+            <p>Generacion de datos fundamentales , informacion socioeconomica y de variables ambientales almacenados en una base de datos postgis en nuestro geoportal web.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Informacion de ubicacion.</h3>
+            <p>Informacion de interes sobre la sucede en nuestro pais.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>G</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>i</span>
+        <span>a</span> 
+        <span>y</span>
+        <span>N</span>
+        <span>o</span>
+        <span>t</span>
+        <span>i</span>
+        <span>c</span>
+        <span>i</span>
+        <span>a</span>
+        <span>s</span>  
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="ALMO-XIOMARA.jpg" alt="">
+            <div class="content">
+                <h3>Gobierno Ciudadano.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="BertaVive.jpg" alt="">
+            <div class="content">
+                <h3>Gobierno Ciudadano.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Cumbre.jpg" alt="">
+            <div class="content">
+                <h3>Gobierno Ciudadano.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="estructura.jpg" alt="">
+            <div class="content">
+                <h3>Gobierno Ciudadano.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Feminismo.jpg" alt="">
+            <div class="content">
+                <h3>Gobierno Ciudadano.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="LIBRE.jpg" alt="">
+            <div class="content">
+                <h3>Gobierno Ciudadano.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO7.PNG" alt="">
+            <div class="content">
+                <h3>Gobierno Ciudadano.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO8.PNG" alt="">
+            <div class="content">
+                <h3>Gobierno Ciudadano.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Plan-gobierno.jpg" alt=""> 
+            <div class="content">
+                <h3>Gobierno Ciudadano.</h3> 
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="home2" id="home">
+    <h1 class="heading">
+        <span>M</span>
+        <span>a</span>
+        <span>p</span>
+        <span>a</span>
+        <span>s</span>
+        <span>W</span>
+        <span>e</span>
+        <span>b</span> 
+           
+    </h1>
+    <div class="slide-container active">
+        <div class="slide">
+            <div class="content">
+                <span>Mira el mapa web conoce Honduras.</span>
+                <h3>Talanga, Francisco Morazán</h3>
+                <p>
+                    Información sobre nuestro sitio turístico, Galería de fotos mapa web de turismo. 
+                </p>
+                <a href="Talanga.html" class="btn">Mira Aqui</a>
+            </div>
+            <div class="images">
+                <img src="Talanga2.jpg" alt="" class="text"> 
+            </div>
+        </div>
+    </div> 
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <span>Mira el mapa web conoce Honduras.</span>
+                <h3>La Tigra, Francisco Morazán</h3>
+                <p>
+                    Información sobre nuestro sitio turístico, Galería de fotos mapa web de turismo.
+                </p>
+                <a href="#" class="btn">Mira Aqui</a>
+            </div>
+            <div class="images">
+                <img src="LaTigra.jpg" alt="" class="text">
+            </div>
+        </div>
+    </div> 
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <span>Mira el mapa web conoce Honduras.</span> 
+                <h3>Santa Lucia,Francisco Morazán</h3>
+                <p>
+                    Información sobre nuestro sitio turístico, Galería de fotos mapa web de turismo.
+                </p>
+                <a href="#" class="btn">Mira Aqui</a>
+            </div>
+            <div class="images">
+                <img src="Santalucia.jpg" alt="" class="text">
+            </div>
+        </div>
+    </div>
+    <div id="prev" class="fas fa-chevron-left" ></div>
+    <div id="next" class="fas fa-chevron-right"></div>
+</section> 
+
+<div class="Mapafinal">
+    <div class="Mapafinaldata">
+            <div class="resumen">
+            <h2>Agenda Presidencial Xiomara Castro.</h2>
+            <p>
+                Ubicaciones de interes de la presidenta Xiomara durante su gobierno.
+            </p>
+            </div>
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>Casa Presidencial.</h3>
+                <form id="form">
+                    <input type="text" name="Turismo" class="input" id="Turismo1" placeholder="Casa Presidencial" />
+                    <button type="submit">Mira el Mapa.</button>
+                </form> 
+                </div>
+                <div class="contenido-imagen">
+                    <img src="USA-HN.webp" alt="IMG1">
+                </div>
+            </div> 
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>Toma de posecion.</h3>
+                <form id="form1"> 
+                    <input type="text" name="Turismo" class="input" id="Turismo2" placeholder="Toma de posecion"/>
+                    <button type="submit">Mira el Mapa.</button>
+                </form>
+                </div>
+                <div class="contenido-imagen">
+                    <img src="XIO2.webp" alt="IMG1">
+                </div>
+            </div> 
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>Sede partido libre.</h3>
+                <form id="form2">
+                    <input type="text" name="Turismo" class="input" id="Turismo3" placeholder="Sede partido libre"/>
+                    <button type="submit">Mira el mapa.</button>
+                </form>
+                </div>
+                <div class="contenido-imagen">
+                    <img src="LIBRE.jpg" alt="IMG1">
+                </div>
+            </div> 
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>BCIIE</h3>
+                <form id="form3">
+                    <input type="text" name="Turismo" class="input" id="Turismo4" placeholder="BCIIE" />
+                    <button type="submit">Mira el Mapa.</button>
+                </form>
+                </div>
+                <div class="contenido-imagen">
+                    <img src="estructura.jpg" alt="IMG1">
+                </div>
+            </div> 
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>Fuerza Area Hondureña.</h3>
+                <form id="form4">
+                    <input type="text" name="Turismo" class="input" id="Turismo5" placeholder="Fuerza Area Hondureña"/>
+                    <button type="submit">Mira el Mapa.</button>
+                </form>
+                </div>
+                <div class="contenido-imagen">
+                    <img src="Fuerza.webp" alt="IMG1">
+                </div>
+            </div>
+            <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Base Naval de Honduras.</h3>
+            <form id="form5">
+                <input type="text" name="Turismo" class="input" id="Turismo6" placeholder="Base Naval de Honduras"/>
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="Fuerza.webp" alt="IMG1">
+            </div>
+            </div> 
+           <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>COHEP.</h3>
+            <form id="form6">
+                <input type="text" name="Turismo" class="input" id="Turismo7" placeholder="COHEP"/>
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="COHEP-XIOMI.webp" alt="IMG1">
+            </div>
+           </div> 
+           <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Casa presidencial palacio 2.</h3> 
+            <form id="form7">
+                <input type="text" name="Turismo" class="input" id="Turismo8" placeholder="Casa presidencial palacio 2"/>
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="ALMO-XIOMARA.jpg" alt="IMG1">
+            </div>
+          </div> 
+    </div>
+    <div class="map2" id="map2"></div>
+</div>  
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Sobre Nosotros</h3>
+            <p>Aplicacion de los SIG al desarrollo sostenible de Honduras.</p>
+        </div>
+        <div class="box">
+            <h3>Enlaces</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Geoportal</a>
+            <a href="#">Servicios</a>
+            <a href="#">Mapa general</a>
+            <a href="#">Investigaciones</a>
+            <a href="#">Contactanos</a>
+        </div>
+        <div class="box">
+            <h3>Siguenos en: </h3>
+            <a href="#" class="fa-brands fa-facebook-f">Facebok</a>
+            <a href="#" class="fa-brands fa-instagram">Instagram</a>
+            <a href="#"class="fa-brands fa-twitter">Twitter</a>
+            <a href="#" class="fa-brands fa-github">Github</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> Creado por <span> Carlos Archaga Analista SIG. </span> | Derechos reservador </h1>
+
+</section>
+         
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+        <script src="https://unpkg.com/scrollreveal"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script src="scripts1.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
+    <script src="leaflet-measure.js"></script>
+    <script src="Control.MiniMap.js"></script>
+    <script src="leaflet-panel-layers.js"></script>
+    <script src="leaflet-providers.js"></script>
+    <script src="leaflet.legend.js"></script>
+    <script src="Dept_HN.js"></script>
+    <script src="Mun_Islas_Bahia.js"></script>
+    <script src="Aldeas_Roatan.js"></script>
+    <script src="Dept_Islas_Bahia.js"></script>
+    <script src="Islas_Bahia_map.js"></script> 
+    
+    <script src="Mapa4.js"></script>
+    
+    </body>
+</html>

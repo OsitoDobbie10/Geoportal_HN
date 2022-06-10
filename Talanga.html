@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'> 
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="talanga.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/> 
+      <!--referenciar el estilo del mini map-->
+      <link rel="stylesheet" href="Control.MiniMap.css">
+       <!--referenciar el estilo del legend-->
+      <link rel="stylesheet" href="leaflet.legend.css">
+      <link rel="stylesheet" href="leaflet-panel-layers.css">
+      <link rel="stylesheet" href="leaflet.legend.css"> 
+  
+
+    <title>Talanga web</title>
+</head>
+<body>
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <a href="#" class="logo"><span>Geo</span>Turismo.</a>
+    
+        <nav class="navbar">
+            <a href="Inicio.html">Inicio</a>
+            <a href="#book">Geoportal</a>
+            <a href="#packages">Servicios</a>
+            <a href="#services">Mapa general</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#review">Investigaciones</a>
+            <a href="#contact">Contactanos</a>
+        </nav>
+    
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    
+    </header>
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+    
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Ingresa tu Email">
+            <input type="password" class="box" placeholder="Ingresa tu contraseña">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Recordar.</label>
+            <p>Olividastes la contraseña? <a href="#">Click aqui</a></p>
+            <p>No tienes una cuenta? <a href="#">registrate aqui.</a></p>
+        </form>
+    
+    </div>
+    <div class="conteiner-welcome">
+        <div class="contenedor-img">
+                <img src="Talanga2.jpg" alt="Geoturismo">
+        </div>
+        <div class="contenedor-texto">
+        <h2 class="titulo">
+        <span class="typed"></span> 
+        </h2> 
+         <div class="titulo" id="cadenas-texto">
+        <p>Bienvenido a <i class="mascota">Talanga</i></p>
+        <p><i class="mascota">Mapeo turistico.</i></p> 
+        </div>  
+        <p class="parrafo">Conoce un poco del municipio de Talanga y ve los atractuvos turisticos que ofrece este bello municipio, ubicado en el Dept de Francisco Morazán.</p>
+        <a href="#" class="btn-link activo">Visitanos</a>
+        <a href="#" class="btn-link">Geportal web.</a>
+        </div>
+    </div>
+  <section class="informacion">
+    <h1 class="heading">
+        <span>G</span>
+        <span>e</span>
+        <span>n</span>
+        <span>e</span>
+        <span>r</span>
+        <span>a</span>
+        <span>l</span>
+        <span>i</span>
+        <span>d</span>
+        <span>a</span>
+        <span>d</span>
+        <span>e</span>
+        <span>s</span>
+        <br> <br>
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>      
+    </h1>
+      <article>
+          <h2>Municipio de Talanga</h2>
+          <p>
+            Es un municipio del departamento de Francisco Morazán en la República de Honduras, Su nombre significa "Lugar de lodo o lugar de fango".
+            A unos 52 km (por carretera) desde Tegucigalpa (capital de Honduras), cabecera del municipio homónimo.Geográficamente está situada en un valle, rodeado de pequeñas montañas, pasando por su corazón un río que con los años se ha convertido en un riachuelo. <br>
+          </p>
+      </article>
+      <article>
+        <h2>Historia de Talanga</h2>
+        <p>
+            En 1791, se remontan los primeros registros de población, cuando aparece formando parte del Curato de Cantarranas.En 1829 fue declarado como municipio por Pedro de Alvarado en 1981, fue nombrada oficialmente como ciudad.
+        </p>
+    </article>
+    <article>
+        <h2>Economía de Talanga</h2>
+        <p>
+            La economía de la ciudad se ha caracterizado por la prestación de servicios, principalmente el comercio. Es el punto de intercambio de mercaderías de las comunidades ubicadas en los valles de Siria, y el norte de Francisco Morazán. En los últimos años ha sufrido de una importante emigración de sus habitantes, principalmente hacia Estados Unidos y España, lo cual ha incrementado el comercio en la ciudad.
+
+            El municipio cuenta con importantes reservas forestales, lo cual se evidencia por la presencia de varias empresas transformadoras de la madera. La elaboración de muebles acabados y la producción de palillo, son los principales productos maderables obtenidos en el municipio.
+            
+            En la producción agropecuaria destaca la producción de frijoles, maíz, caña de azúcar, la cual es procesada en trapiches tradicionales o comprada por el Ingenio Azucarero Tres Valles ubicado en el municipio vecino de San Juan de Flores (Cantarranas). En los últimos años está cobrando mucha importancia la producción de plátano y chile jalapeños.
+            
+            Las galeras son famosas por la fabricación natural de la miel de caña y los derivados de este fruto, como son el mico , la cachasa negra y el caldo de caña.
+            
+            El producto agroindustrial más conocido es la rosquilla, las cuales cuentan con fama a nivel nacional. Estas pueden consumirse con café o en dulce de rapadura de dulce (rosquillas en miel).
+        </p>
+    </article>
+
+    <article>
+        <h2>Turismo de Talanga</h2>
+        <p>
+            Talanga cuenta con muy poco turismo ya que la poca importancia por parte de las autoridades para darla a conocer más y atraer a turistas tanto nacionales como internacionales, no se ha demostrado todavía. Pero cuenta con varios lugares que la hacen exquisita como ser la pequeña loma o cerro que se encuentra ahí, de donde se puede observar la ciudad por completo, sus aldeas que la hacen diferente. Y así variedad de atractivos en sus fiestas patronales, navideñas y de otro tipo.
+
+            En el cerro atrás de la loma de la montaña se encuentra una cueva que está escondida por la vegetación según cuentan las leyendas los antiguos indígenas vivieron en esta cueva y se puede ver algunas sillas de piedra en el fondo, aunque dentro de la cueva hay una oscuridad total y la paredes llenas de hollín posiblemente los indígenas usaban el ocote de los árboles para alumbrarse también se siente el olor de azufre. a esta cueva le llaman la cueva del diablo. La cueva entre más avanza se va reduciendo en tamaño.
+            
+            Acerca del cerro de la loma se cuenta una leyenda de que el cerro iba creciendo pero un antiguo sacerdote colocó una cruz de ocote y dejó de crecer esta loma. Actualmente esta esa cruz en esa loma.
+            
+            Talanga cuenta con un comité de desarrollo el cual esta impulsando el desarrollo turístico de la ciudad por medio de murales artísticos con temática cultural y tradicional.
+        </p>
+    </article>
+  </section>
+  <h1 class="heading">
+    <span>M</span>
+    <span>a</span>
+    <span>p</span>
+    <span>a</span>
+    <span>d</span>
+    <span>e</span>
+    <br>
+    <span>U</span>
+    <span>b</span>
+    <span>i</span>
+    <span>c</span>
+    <span>a</span>
+    <span>c</span>
+    <span>i</span>
+    <span>o</span>
+    <span>n</span>
+    <span>T</span>
+    <span>a</span>
+    <span>l</span>
+    <span>a</span>
+    <span>n</span>
+    <span>g</span>
+    <span>a</span>
+
+         
+</h1> 
+
+<div class="contenedor_mapa">
+    <div class="contenedor-data">
+        <h2>Mapa de ubicacion de Talanga</h2>
+        <ul>
+            <li>Ubicacion Dept Francisco Morazan</li>
+            <li>Datos generales municipio:</li>
+            <li>Area:429.4 KM2</li>
+            <li>Cota media: 837msm.</li>
+            <li>Coordenadas: 14.40,-87.083</li>
+            <li>Total Poblacion: 28200 Hab</li>
+        </ul> <br>
+        <img src="Grafico1.png" alt="Data"> 
+        <br> <br> <br>
+        <img src="Talanga6.jpg" alt="Data2">
+        <br> 
+        <p>Fuente datos INE 2013.</p>
+    </div>
+    <div class="map" id="mapa"></div>
+</div> 
+<h1 class="heading">
+    <span>M</span>
+    <span>a</span>
+    <span>p</span>
+    <span>a</span>
+    <span>s</span>
+    <br>
+    <span>A</span>
+    <span>s</span>
+    <span>p</span>
+    <span>e</span>
+    <span>c</span>
+    <span>t</span>
+    <span>o</span>
+    <span>s</span>
+    <span>F</span>
+    <span>i</span>
+    <span>s</span>
+    <span>i</span>
+    <span>c</span>
+    <span>o</span>
+    <span>s</span>
+    <br>
+    <span>T</span>
+    <span>a</span>
+    <span>l</span>
+    <span>a</span>
+    <span>n</span>
+    <span>g</span>
+    <span>a</span>
+    
+
+         
+</h1> 
+
+<div class="mapas-fisicos">
+    <h1 class="heading">
+        <span>G</span>
+        <span>e</span>
+        <span>o</span>
+        <span>l</span>
+        <span>o</span>
+        <span>g</span>
+        <span>i</span>  
+        <span>a</span>
+        <br>
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>         
+    </h1>  
+    <div class="mapa-fisico">
+        <iframe allowFullScreen style="border: none;" height="600" width="1200" src="http://localhost:82/mapstore/embedded.html#/130"></iframe>
+        
+    </div>
+    <h1 class="heading">
+        <span>U</span>
+        <span>s</span>
+        <span>o</span>
+        <span>d</span>
+        <span>e</span>
+        <span>S</span>
+        <span>u</span>  
+        <span>e</span>
+        <span>l</span>  
+        <span>o</span>
+        <br>
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>         
+    </h1>
+    <div class="mapa-fisico"> 
+        <iframe allowFullScreen style="border: none;" height="600" width="1200" src="http://localhost:82/mapstore/embedded.html#/135"></iframe>   
+    </div>
+    <h1 class="heading">
+        <span>H</span>
+        <span>i</span>
+        <span>d</span>
+        <span>r</span>
+        <span>o</span>
+        <span>g</span>
+        <span>e</span>  
+        <span>o</span>
+        <span>l</span>  
+        <span>o</span>
+        <span>g</span>  
+        <span>i</span>
+        <span>a</span>
+        <br>
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>         
+    </h1>
+    <div class="mapa-fisico">
+        <iframe allowFullScreen style="border: none;" height="600" width="1200" src="http://localhost:82/mapstore/embedded.html#/133"></iframe>
+        
+    </div>
+    <h1 class="heading">
+        <span>E</span>
+        <span>c</span>
+        <span>o</span>
+        <span>s</span>
+        <span>i</span>
+        <span>s</span>
+        <span>t</span>  
+        <span>e</span>
+        <span>m</span>  
+        <span>a</span>
+        <span>s</span>  
+        <br>
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>         
+    </h1>
+    <div class="mapa-fisico">
+        <iframe allowFullScreen style="border: none;" height="600" width="1200" src="http://localhost:82/mapstore/embedded.html#/132"></iframe>
+        
+    </div>
+    <h1 class="heading">
+        <span>S</span>
+        <span>u</span>
+        <span>e</span>
+        <span>l</span>
+        <span>o</span>
+        <span>s</span>
+        <span>S</span>  
+        <span>i</span>
+        <span>m</span>  
+        <span>m</span>
+        <span>o</span> 
+        <span>n</span>  
+        <span>s</span>   
+        <br>
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>         
+    </h1>
+    <div class="mapa-fisico">
+        <iframe allowFullScreen style="border: none;" height="600" width="1200" src="http://localhost:82/mapstore/embedded.html#/134"></iframe>  
+    </div>   
+</div>
+
+<section class="Turismo-Talanga">
+    <h1 class="heading">
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>
+        <br>
+        <span>T</span>
+        <span>u</span>
+        <span>r</span>
+        <span>i</span>
+        <span>s</span>
+        <span>m</span>
+        <span>o</span>         
+    </h1> 
+<article>
+        <h2>Conoce Talanga.</h2>
+        <p>
+            Talanga cuenta con un comité de desarrollo el cual está impulsando el desarrollo turístico de   la ciudad por medio de murales artísticos con temática cultural y tradicional. Donde impulsamos la belleza artesanal, fomentando en los jóvenes el amor al arte para poder mostrar la belleza natural de Talanga. 
+            Nuestro último proyecto llamado primer festival muralista fue un proyecto que nació en la comunidad de Talanga, para poder proporcionar una belleza artística al municipio este es uno de los atractivos más destacados que podemos ver entre los locales 
+            
+        </p>
+</article>
+</section> 
+<section class="home" id="home">
+    <div class="slide-container active">
+        <div class="slide">
+            <div class="content">
+                <span>Proyecto Muralista Talanga.</span>
+                <h3>Talanga, Francisco Morazán</h3>
+                <p>
+                    Puedes ver mas informacion en el enlace abajo. 
+                </p>
+                <a href="https://www.honduras.com/notas/cultura/talanga-se-llena-de-arte-con-el-primer-encuentro-muralista/" class="btn">Mira Aqui</a>
+            </div>
+            <div class="images">
+                <img src="Talanga1.jpg" alt="" class="text"> 
+            </div>
+        </div>
+    </div> 
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <span>Proyecto Muralista Talanga.</span>
+                <h3>Talanga, Francisco Morazánn</h3>
+                <p>
+                    Puedes ver mas informacion en el enlace abajo. 
+                </p>
+                <a href="https://www.honduras.com/notas/cultura/talanga-se-llena-de-arte-con-el-primer-encuentro-muralista" class="btn">Mira Aqui</a>
+            </div>
+            <div class="images">
+                <img src="Talanga3.PNG" alt="" class="text">
+            </div>
+        </div>
+    </div> 
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <span>Proyecto Muralista Talanga.</span>
+                <h3>Talanga, Francisco Morazánn</h3>
+                <p>
+                    Puedes ver mas informacion en el enlace abajo. 
+                </p>
+                <a href="https://www.honduras.com/notas/cultura/talanga-se-llena-de-arte-con-el-primer-encuentro-muralista" class="btn">Mira Aqui</a>
+            </div>
+            <div class="images">
+                <img src="Talanga4.PNG" alt="" class="text">
+            </div>
+        </div>
+    </div>
+    <div id="prev" class="fas fa-chevron-left" ></div>
+    <div id="next" class="fas fa-chevron-right"></div>
+</section> 
+<h1 class="heading"> 
+    <span>D</span>
+    <span>a</span>
+    <span>t</span>
+    <span>o</span>
+    <span>s</span>
+    <br>
+    <span>T</span>
+    <span>u</span>
+    <span>r</span>
+    <span>i</span>
+    <span>s</span>
+    <span>t</span>
+    <span>i</span>
+    <span>c</span>
+    <span>o</span>
+    <span>s</span>
+    <span>T</span>
+    <span>a</span>
+    <span>l</span>
+    <span>a</span>
+    <span>n</span>
+    <span>g</span>
+    <span>a</span>         
+</h1> 
+<section class="Turismo-Talanga">
+    <article>
+        <h2>Hoteles y Hospedaje Talanga.</h2>
+        <p>
+            En Talanga hay un total de 7 hoteles donde se puede hospedar
+            cada visitante que esté interesado en visitar el bello municipio
+            de Talanga, como podemos ver en el siguiente apartado donde puede
+            ver cual es de su interés y reservar. 
+        </p>
+    </article>
+  
+</section>
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>H</span>
+        <span>o</span>
+        <span>T</span>
+        <span>e</span>
+        <span>l</span>
+        <span>e</span>
+        <span>s</span>
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>
+    </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Real_Hacienda.jpg" alt="Hotel1">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Hotel Real la Hacienda </h3>
+                <p>Consulta precios y detalles del Hotel</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span></div>
+                <a href="#" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Eco-Hotel _Cabañas.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Eco Hotel Cabañas.</h3>
+                <p>Consulta precios y detalles del Hotel</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span> </div>
+                <a href="#" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Hotel_cristina.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Hotel Cristina</h3>
+                <p>Consulta precios y detalles del Hotel.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span></div>
+                <a href="#" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Hotel_DD.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Hotel La Fuente D&D</h3>
+                <p>Consulta precios y detalles del Hotel.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span> </div>
+                <a href="#" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Motel_Miami.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Motel Miami</h3>
+                <p>Consulta precios y detalles del Hotel.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span> </div>
+                <a href="Talanga.html" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Turismo-Talanga">
+    <article>
+        <h2>Restaurantes de Talanga.</h2>
+        <p>
+            En Talanga hay un total de 35 Restaurantes donde los visitantes pueden darse gusto vamos a nombrar algunos de los mas importantes que hay dentro del municipio. 
+        </p>
+    </article>
+  
+</section> 
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>R</span>
+        <span>e</span>
+        <span>s</span>
+        <span>t</span>
+        <span>a</span>
+        <span>u</span>
+        <span>r</span>
+        <span>a</span>
+        <span>n</span>
+        <span>t</span>
+        <span>e</span>
+        <span>s</span>
+        <br>
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>
+    </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="AsadosLapina.jpg" alt="Res1">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Res. Asado Pinto.</h3>
+                <p>Consulta precios y detalles del menu.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span></div>
+                <a href="#" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Casablanca.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Res. Casa Blanca</h3>
+                <p>Consulta precios y detalles del menu.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span> </div>
+                <a href="#" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="ErosCafe.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Res. Eros Cafe</h3>
+                <p>Consulta precios y detalles del menu.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span></div>
+                <a href="#" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="SaborCosteno.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Res. Sabor Costeño</h3>
+                <p>Consulta precios y detalles del menu.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span> </div>
+                <a href="#" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Sisika.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Res. Sisika</h3>
+                <p>Consulta precios y detalles del menu.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Geoturismo Talanga<span></span> </div>
+                <a href="Talanga.html" class="btn">Mira aqui.</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span> 
+        <br>
+        <span>T</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>
+    </h1>
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Review1.jpg" alt="">
+                    <h3>Jessy Canales</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Review2.jpg" alt="">
+                    <h3>Paulina Letelier</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Review3.jpg" alt="">
+                    <h3>Sayda Ibelize</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<h1 class="heading">
+    <span>M</span>
+    <span>a</span>
+    <span>p</span>
+    <span>a</span> 
+    <br>
+    <span>T</span>
+    <span>u</span>
+    <span>r</span>
+    <span>i</span>
+    <span>s</span>
+    <span>t</span>
+    <span>i</span>
+    <span>c</span>
+    <span>o</span>
+</h1>
+
+<section class="Mapafinal">
+    <div class="Mapafinaldata">
+        <div class="resumen">
+        <h2>Mapa Turistico Talanga</h2>
+        <p>
+            Ubicacion de elementos como turismo de interes, comercio, Gasolineras, 
+            centros de abastecimientos, centros comerciales y Hoteles.
+        </p>
+        </div>
+        <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Ubicacion de Interes turisticos</h3>
+            <form id="form">
+                <input type="text" name="Turismo" class="input" id="Turismo" placeholder="Centros turisticos" />
+                <button type="submit">Mira el Mapa.</button>
+            </form> 
+            </div>
+            <div class="contenido-imagen">
+                <img src="destino.png" alt="IMG1">
+            </div>
+        </div> 
+        <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Ubicacion de Hoteles</h3>
+            <form id="form">
+                <input type="text" name="Turismo" class="input" id="Turismo" placeholder="Hoteles"/>
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="hotel.png" alt="IMG1">
+            </div>
+        </div> 
+        <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Ubicacion de Restaurantes</h3>
+            <form id="form">
+                <input type="text" name="Turismo" class="input" id="Turismo" placeholder="Centros turisticos" />
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="restaurante.png" alt="IMG1">
+            </div>
+        </div> 
+        <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Ubicacion de Mercados</h3>
+            <form id="form">
+                <input type="text" name="Turismo" class="input" id="Turismo" placeholder="Mercados" />
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="centro-comercial.png" alt="IMG1">
+            </div>
+        </div> 
+        <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Ubicacion de Gasolineras.</h3>
+            <form id="form">
+                <input type="text" name="Turismo" class="input" id="Turismo" placeholder="Gasolineras"/>
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="gasolinera.png" alt="IMG1">
+            </div>
+        </div>
+
+    </div>
+    <div class="map2" id="map2">
+
+    </div>
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Sobre Nosotros</h3>
+            <p>Aplicacion de los SIG al desarrollo sostenible de Honduras.</p>
+        </div>
+        <div class="box">
+            <h3>Enlaces</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Geoportal</a>
+            <a href="#">Servicios</a>
+            <a href="#">Mapa general</a>
+            <a href="#">Investigaciones</a>
+            <a href="#">Contactanos</a>
+        </div>
+        <div class="box">
+            <h3>Siguenos en: </h3>
+            <a href="#" class="fa-brands fa-facebook-f">Facebok</a>
+            <a href="#" class="fa-brands fa-instagram">Instagram</a>
+            <a href="#"class="fa-brands fa-twitter">Twitter</a>
+            <a href="#" class="fa-brands fa-github">Github</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> Creado por <span> Carlos Archaga Analista SIG. </span> | Derechos reservador </h1>
+
+</section>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
+    <script src="leaflet-measure.js"></script>
+    <script src="Control.MiniMap.js"></script>
+    <script src="leaflet-panel-layers.js"></script>
+    <script src="leaflet-providers.js"></script>
+    <script src="leaflet.legend.js"></script>
+    <script src="comercio.js"></script>
+    <script src="gasolineria.js"></script>
+    <script src="Hoteles.js"></script>
+    <script src="puntos_turisticos.js"></script>
+    <script src="Talanga_limite.js"></script>
+    <script src="Talanga_Puntos_turisticos.geojson"></script>
+    <script src="restaurantes.js"></script>
+    <script src="red_vial.js"></script>
+    <script src="Aldeas.js"></script>
+    <script src="talanga.js"></script>
+    <script src="mapas.js"></script>   
+    <script src="Mapas2.js"></script> 
+</body>
+</html>

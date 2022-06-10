@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "Centros_turisticos_Isla_Bahias",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Coxen Hole", "CoorX": -86.531, "CoorY": 16.317 }, "geometry": { "type": "Point", "coordinates": [ -86.5310397, 16.3168745, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Playa Esmeralda", "CoorX": -86.6, "CoorY": 16.273 }, "geometry": { "type": "Point", "coordinates": [ -86.6003885, 16.2727698, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "West End", "CoorX": -86.594, "CoorY": 16.306 }, "geometry": { "type": "Point", "coordinates": [ -86.5943203, 16.305823, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Punta Gorda", "CoorX": -86.364, "CoorY": 16.414 }, "geometry": { "type": "Point", "coordinates": [ -86.3642866, 16.4136899, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Frenchy's 44", "CoorX": -86.443, "CoorY": 16.357 }, "geometry": { "type": "Point", "coordinates": [ -86.4428787, 16.3569869, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Carambola Gardens", "CoorX": -86.572, "CoorY": 16.324 }, "geometry": { "type": "Point", "coordinates": [ -86.5718005, 16.3241069, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Isla Santa Elena", "CoorX": -86.217, "CoorY": 16.417 }, "geometry": { "type": "Point", "coordinates": [ -86.2166667, 16.4166667, 0.0 ] } }
+]
+}

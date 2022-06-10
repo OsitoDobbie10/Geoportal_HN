@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'> 
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Islas_Bahia.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/> 
+      <!--referenciar el estilo del mini map-->
+      <link rel="stylesheet" href="Control.MiniMap.css">
+       <!--referenciar el estilo del legend-->
+      <link rel="stylesheet" href="leaflet.legend.css">
+      <link rel="stylesheet" href="leaflet-panel-layers.css">
+      <link rel="stylesheet" href="leaflet.legend.css">
+    <title>Islas de la Bahia</title>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>  
+        <a href="#" class="logo"><span>Geo</span>Turismo.</a>  
+        <nav class="navbar">
+            <a href="Inicio.html">Inicio</a>
+            <a href="#book">Geoportal</a>
+            <a href="#packages">Servicios</a>
+            <a href="#services">Mapa general</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#review">Investigaciones</a>
+            <a href="#contact">Contactanos</a>
+        </nav>   
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    
+    </header>
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i> 
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Ingresa tu Email">
+            <input type="password" class="box" placeholder="Ingresa tu contraseña">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Recordar.</label>
+            <p>Olividastes la contraseña? <a href="#">Click aqui</a></p>
+            <p>No tienes una cuenta? <a href="#">registrate aqui.</a></p>
+        </form>   
+    </div>
+    <div class="conteiner-welcome">
+        <div class="contenedor-img">
+                <img src="Fondo_Islas_bahia.jpg" alt="Geoturismo">
+        </div>
+        <div class="contenedor-texto">
+        <h2 class="titulo">
+        <span class="typed"></span> 
+        </h2> 
+         <div class="titulo" id="cadenas-texto">
+        <p>Bienvenido a <i class="mascota">Islas de la Bahia.</i></p>
+        <p><i class="mascota">Mapeo turistico.</i></p> 
+        </div>  
+        <p class="parrafo">Conoce un poco del Dept de Islas de la bahia y ve los atractivos turisticos que ofrece este bella isla, ubicado en el mar caribe.</p>
+        <a href="#" class="btn-link activo">Visitanos</a>
+        <a href="#" class="btn-link">Geportal web.</a>
+        </div>
+    </div>
+    <section class="informacion">
+        <h1 class="heading">
+            <span>I</span>
+            <span>s</span>
+            <span>l</span>
+            <span>a</span>
+            <span>s</span>
+            <br> <br>
+            <span>d</span>
+            <span>e</span>
+            <br> <br>
+            <span>l</span>
+            <span>a</span>
+            <br> <br>
+            <span>B</span>
+            <span>a</span>
+            <span>h</span>
+            <span>i</span>
+            <span>a</span>     
+        </h1>
+          <article>
+              <h2>Departamento de Islas de la Bahia</h2>
+              <p>
+                El archipiélago de Islas de la Bahía está situado en el Golfo de Honduras y es uno de los dieciocho departamentos de la división político-administrativa de esta nación centroamericana.
+
+                El archipiélago de Islas de la Bahía, está formado por tres islas mayores que son Utila, Roatán y Guanaja, más las tres pequeñas islas de Barba reta, Morat y Santa Elena, y más de 60 cayos, situados a tan sólo 10 y 40 millas de la parte continental de Honduras en el Mar Caribe <br>
+              </p>
+          </article>
+          <article>
+            <h2>Municipio de Roatán</h2>
+            <p>
+                Roatán es una isla tropical bastante pequeña que se encuentra en el Mar Caribe, cerca de la costa de Honduras. Roatán, además, es la isla más grande del archipiélago de las Islas de la Bahía.
+                <br>
+                Es uno de los sitios turisticos mas importantes de Honduras en el siguiente mapa vamos a mostrar los limites administrativos de Islas de la bahia, y los puntos mas importantes segun los turistas.
+            </p>
+        </article>
+    </section>
+    <div class="Mapafinal">
+    <div class="Mapafinaldata">
+            <div class="resumen">
+            <h2>7 puntos turisticos mas importantes Islas de la Bahia</h2>
+            <p>
+                Ubicacion de elementos turisticos mas importantes segun las fuentes estadisticas, en el bello Dept de Islas de la Bahia.
+            </p>
+            </div>
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>Ubicacion de Interes turisticos</h3>
+                <form id="form">
+                    <input type="text" name="Turismo" class="input" id="Turismo1" placeholder="Ubica un elemento" />
+                    <button type="submit">Mira el Mapa.</button>
+                </form> 
+                </div>
+                <div class="contenido-imagen">
+                    <img src="destino.png" alt="IMG1">
+                </div>
+            </div> 
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>Coxen Hole</h3>
+                <form id="form1"> 
+                    <input type="text" name="Turismo" class="input" id="Turismo2" placeholder="Coxen Hole"/>
+                    <button type="submit">Mira el Mapa.</button>
+                </form>
+                </div>
+                <div class="contenido-imagen">
+                    <img src="Coxen Hole.PNG" alt="IMG1">
+                </div>
+            </div> 
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>West Bay</h3>
+                <form id="form2">
+                    <input type="text" name="Turismo" class="input" id="Turismo3" placeholder="West Bay"/>
+                    <button type="submit">Mira el Mapa.</button>
+                </form>
+                </div>
+                <div class="contenido-imagen">
+                    <img src="West Bay.PNG" alt="IMG1">
+                </div>
+            </div> 
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>West End</h3>
+                <form id="form3">
+                    <input type="text" name="Turismo" class="input" id="Turismo4" placeholder="West End" />
+                    <button type="submit">Mira el Mapa.</button>
+                </form>
+                </div>
+                <div class="contenido-imagen">
+                    <img src="West End.PNG" alt="IMG1">
+                </div>
+            </div> 
+            <div class="contenido">
+                <div class="contenido-informacion">
+                <h3>Punta Gorda.</h3>
+                <form id="form4">
+                    <input type="text" name="Turismo" class="input" id="Turismo5" placeholder="Punta Gorda"/>
+                    <button type="submit">Mira el Mapa.</button>
+                </form>
+                </div>
+                <div class="contenido-imagen">
+                    <img src="Punta Gorda.PNG" alt="IMG1">
+                </div>
+            </div>
+            <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Dreamercharters.</h3>
+            <form id="form5">
+                <input type="text" name="Turismo" class="input" id="Turismo6" placeholder="Dreamercharters"/>
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="Dreamerchaters.PNG" alt="IMG1">
+            </div>
+            </div> 
+           <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Jardín Botánico de Carambola.</h3>
+            <form id="form6">
+                <input type="text" name="Turismo" class="input" id="Turismo7" placeholder="Jardín Botánico de Carambola"/>
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="Jadin la carambola.PNG" alt="IMG1">
+            </div>
+           </div> 
+           <div class="contenido">
+            <div class="contenido-informacion">
+            <h3>Isla de Santa Elena.</h3> 
+            <form id="form7">
+                <input type="text" name="Turismo" class="input" id="Turismo8" placeholder="Isla de Santa Elena"/>
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div>
+            <div class="contenido-imagen">
+                <img src="Isla Santa Elena.PNG" alt="IMG1">
+            </div>
+          </div> 
+    </div>
+    <div class="map2" id="map2"></div>
+    </div>  
+
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Sobre Nosotros</h3>
+                <p>Aplicacion de los SIG al desarrollo sostenible de Honduras.</p>
+            </div>
+            <div class="box">
+                <h3>Enlaces</h3>
+                <a href="#">Inicio</a>
+                <a href="#">Geoportal</a>
+                <a href="#">Servicios</a>
+                <a href="#">Mapa general</a>
+                <a href="#">Investigaciones</a>
+                <a href="#">Contactanos</a>
+            </div>
+            <div class="box">
+                <h3>Siguenos en: </h3>
+                <a href="#" class="fa-brands fa-facebook-f">Facebok</a>
+                <a href="#" class="fa-brands fa-instagram">Instagram</a>
+                <a href="#"class="fa-brands fa-twitter">Twitter</a>
+                <a href="#" class="fa-brands fa-github">Github</a>
+            </div>
+    
+        </div>
+    
+        <h1 class="credit"> Creado por <span> Carlos Archaga Analista SIG. </span> | Derechos reservador </h1>
+    
+    </section>  
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
+    <script src="leaflet-measure.js"></script>
+    <script src="Control.MiniMap.js"></script>
+    <script src="leaflet-panel-layers.js"></script>
+    <script src="leaflet-providers.js"></script>
+    <script src="leaflet.legend.js"></script>
+    <script src="Dept_HN.js"></script>
+    <script src="Mun_Islas_Bahia.js"></script>
+    <script src="Aldeas_Roatan.js"></script>
+    <script src="Dept_Islas_Bahia.js"></script>
+    <script src="Islas_Bahia_map.js"></script> 
+    <script src="Mapa3.js"></script>  
+
+    
+</div>
+</html>
